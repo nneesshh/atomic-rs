@@ -1,7 +1,7 @@
 [package]
 name = "atomic"
 version = "0.6.0"
-edition = "2018"
+edition = "2021"
 authors = ["Amanieu d'Antras <amanieu@gmail.com>"]
 description = "Generic Atomic<T> wrapper type"
 license = "Apache-2.0/MIT"
@@ -16,7 +16,7 @@ fallback = []
 nightly = []
 
 [dependencies]
-bytemuck = "1.13.1"
+bytemuck = { path = "../bytemuck", features = ["derive"]}
 
 [dev-dependencies]
-bytemuck = { version = "1.13.1", features = ["derive"] }
+bytemuck = { path = "../bytemuck", features = ["derive"]}
